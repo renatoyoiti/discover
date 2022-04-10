@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Basic HTML</title>
+
+    <link rel="stylesheet" href="./styles.css">
+	</head>
+	<body>
+    <h1>Basic HTML TAGS</h1>
+    <ul>
+      <li><a href="#tables">Tables</a></li>
+    </ul>
+
+    <h2 id="tables">Tables</h2>
+    <h3>Complex Table</h3>
+    <table>
+      <!-- TAG used for accessibility purposes, and giving a short description of the table content -->
+      <caption>Produzidos x Vendidos p/ Loja</caption>
+
+      <!-- group columns -->
+      <!-- user for accessibility and to facilitate posterior styling -->
+      <colgroup>
+        <col>
+        <col span="2" style="background-color: rgb(85, 85, 85);">
+        <col span="2" style="background-color: rgb(85, 57, 39);">
+      </colgroup>
+
+      <thead>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2" scope="colgroup">Afonso Pena</th>
+          <th colspan="2" scope="colgroup">Antonia Pereira</th>
+        </tr>
+
+        <tr>
+          <th scope="col">Produzidos</th>
+          <th scope="col">Vendidos</th>
+          <th scope="col">Produzidos</th>
+          <th scope="col">Vendidos</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope="row">Vassouras</th>
+          <td>50</td>
+          <td>30</td>
+          <td>20</td>
+          <td>20</td>
+        </tr>
+
+        <tr>
+          <th scope="row">Baldes</th>
+          <td>10</td>
+          <td>10</td>
+          <td>30</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>SEO: Search Engine Optimization</h2>
+    <code>
+      &lt;meta&gt; charset="UTF-8"&lt;/meta&gt; <br/>
+      <p>Mobile compatibility</p>
+      &lt;meta&gt; name="viewport" content="width=device-width, initial-scale=1"&lt;/meta&gt; <br>
+      <p>Author</p>
+      &lt;meta&gt; name="author" content="Renato Yoiti" &lt;/meta&gt; <br>
+      <p>A fixed description of the site</p>
+      &lt;meta&gt; name="description" content="A HTML page to introduce the concepts behind it" &lt;/meta&gt; <br>
+
+      &lt;meta&gt; name="robots" content="nofollow || follow, noindex" &lt;/meta&gt; <br>
+    </code>
+  </body>
+</html>
